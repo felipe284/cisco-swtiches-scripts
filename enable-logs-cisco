@@ -1,0 +1,4 @@
+logging X.X.X.X
+logging facility local6
+logging trap debugging
+logging origin-id hostname
