@@ -1,0 +1,12 @@
+SWSP-A-PoE-1#configure terminal 
+SWSP-A-PoE-1(config)#archive 
+SWSP-A-PoE-1(config-archive)#log config 
+SWSP-A-PoE-1(config-archive-log-cfg)#logging enable 
+SWSP-A-PoE-1(config-archive-log-cfg)#notify syslog 
+SWSP-A-PoE-1(config-archive-log-cfg)#hidekeys 
+SWSP-A-PoE-1(config-archive-log-cfg)#exit
+SWSP-A-PoE-1(config-archive)#exit
+SWSP-A-PoE-1(config)#exit
+SWSP-A-PoE-1#wr
+Building configuration...
+[OK]!
