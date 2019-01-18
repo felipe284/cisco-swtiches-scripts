@@ -1,0 +1,23 @@
+configure terminal
+archive
+path tftp://X.X.X.X/$h-$t
+write-memory
+time-period 10080
+exit
+
+kron policy-list CONFIGURATION_BACKUP
+ cli write memory
+exit
+
+kron occurrence BACKUP_OCCURRENCE at 23:00 Mon recurring
+policy-list CONFIGURATION_BACKUP
+exit
+
+end
+
+archive config
+
+wr
+
+
+
