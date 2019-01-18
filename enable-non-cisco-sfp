@@ -1,0 +1,2 @@
+service unsupported-transceiver
+no errdisable detect cause gbic-invalid
